@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice bar</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset{
+            display: block;
+            margin-bottom: 5px;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Juice bar</h2>
+    <form>
+        <label for="name">Your Name
+            <input type="text" placeholder="Your Name" id="name">    
+        </label>
+        <label for="email">Your email
+            <input type="email" placeholder="Email Address" id="email">    
+        </label>
+        <label for="phone">Your Phone Number
+            <input type="number" placeholder="Phone Number" id="phone">    
+        </label>
+
+        <fieldset>
+            <legend>Menu List</legend>
+            <label for="Banana">
+                <input type="radio" name="juice" id="Banana">
+                Banana Juice
+            </label>
+            <label for="Apple">
+                <input type="radio" name="juice" id="Apple">                
+                Apple Juice
+            </label>
+            <label for="Melon">
+                <input type="radio" name="juice" id="Melon">
+                Watermelon Juice
+            </label>    
+        </fieldset>
+        
+        <fieldset>
+            <legend>Extra flavour Add</legend>
+            <label for="vanilla">
+                <input type="checkbox" name="flavour" id="vanilla">
+                Vanilla Flavour
+            </label>
+            <label for="chocolate">
+                <input type="checkbox" name="flavour" id="Chocolate">
+                Chocolate Flavour
+            </label>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
